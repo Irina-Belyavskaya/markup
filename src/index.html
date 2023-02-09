@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <nav class="navigation">
+          <div class="burger__menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="nav__list">
+              <li><a class="nav__item" href="#">Home</a></li>
+              <li><a class="nav__item" href="#">Products</a></li>
+              <li><a class="nav__item" href="#">Articles</a></li>
+              <li><a class="nav__item" href="#">News</a></li>
+              <li><a class="nav__item" href="#">About</a></li>
+              <li><a class="nav__item" href="#">Our team</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="content">
+          <header class="header">
+            <h1>HEADER</h1>
+            <div class="dropdown-wrap">
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              
+            </div>
+          </header>
+          <div class="wrapper__content">
+            <section class="article__wrapper">
+              <article class="article container__square">
+                <div class="square-css"></div>
+              </article>
+              <article class="article container__square">
+                <div class="square-timer"></div>
+              </article>
+              <article class="article container__square">
+                <div class="square-frame"></div>
+              </article>
+              <article class="article select__character">
+                <div class="select">
+                  <div class="select__wrap">
+                    <input type="text" class="select__input"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/4713/4713190.png" class="select__close"></img>   
+                  </div>                
+                  <div class="select__content hide__content">
+                  </div>
+                </div>
+                <p class="select__p__character"></p>
+              </article>
+              <article class="article character__article">
+                <p class="character__info"></p>
+              </article>
+              <article class="article character__article">
+                <p class="character__info"></p>
+              </article>
+              <article class="article character__article">
+                <p class="character__info"></p>
+              </article>
+              <article class="article character__article">
+                <p class="character__info"></p>
+              </article>
+              <article class="chart">
+                <canvas id="canvas-chart"></canvas>
+              </article>
+              <!-- <article class="article character__article">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem at mollitia
+                explicabo vero rem asperiores dolorum debitis eum ipsam. Animi magnam voluptates
+                officia veniam aut, odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Exercitationem at mollitia explicabo vero rem
+                asperiores dolorum debitis eum ipsam. Animi magnam voluptates officia veniam aut,
+                odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Exercitationem at mollitia explicabo vero rem asperiores dolorum
+                debitis eum ipsam. Animi magnam voluptates officia veniam aut, odit repellat tenetur
+                minima suscipit?
+              </article>
+              <article class="article">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem at mollitia
+                explicabo vero rem asperiores dolorum debitis eum ipsam. Animi magnam voluptates
+                officia veniam aut, odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Exercitationem at mollitia explicabo vero rem
+                asperiores dolorum debitis eum ipsam. Animi magnam voluptates officia veniam aut,
+                odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Exercitationem at mollitia explicabo vero rem asperiores dolorum
+                debitis eum ipsam. Animi magnam voluptates officia veniam aut, odit repellat tenetur
+                minima suscipit?
+              </article>
+              <article class="article">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem at mollitia
+                explicabo vero rem asperiores dolorum debitis eum ipsam. Animi magnam voluptates
+                officia veniam aut, odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Exercitationem at mollitia explicabo vero rem
+                asperiores dolorum debitis eum ipsam. Animi magnam voluptates officia veniam aut,
+                odit repellat tenetur minima suscipit? Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Exercitationem at mollitia explicabo vero rem asperiores dolorum
+                debitis eum ipsam. Animi magnam voluptates officia veniam aut, odit repellat tenetur
+                minima suscipit?
+              </article> -->
+            </section>
+            <aside class="aside">
+              <div class="tab">
+                <input type="checkbox" id="chck1" />
+                <label class="tab-label" for="chck1">Article 1</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                </div>
+              </div>
+              <div class="tab">
+                <input type="checkbox" id="chck2" />
+                <label class="tab-label" for="chck2">Article 2</label>
+                <div class="tab-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                </div>
+              </div>
+              
+            </aside>
+          </div>
+
+          <footer class="footer">FOOTER</footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
